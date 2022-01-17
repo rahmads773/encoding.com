@@ -23,7 +23,7 @@ let app = document.getElementById("app");
 let cross = document.getElementById("cross");
 let btn = document.getElementById("btn");
 setTimeout(() => {
-    app.style.display ="block";
+    app.style.display ="flex";
     cross.addEventListener("click",(eo) => {
         app.style.display ="none";
     })
@@ -31,4 +31,4 @@ setTimeout(() => {
         window.open("https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=fr&gl=US");
     })
 
-}, 3000);
+}, 4000);
