@@ -1,3 +1,4 @@
+/* start global rules */
 *{
     -webkit-box-sizing : border-box;
     -moz-box-sizing: border-box;
@@ -61,7 +62,7 @@ justify-content: space-between;
 flex-wrap: wrap;
 gap: 40px;
 position: relative;
-animation: start 2s 1 linear;
+animation: start 1s 1 linear;
 }
 @media (max-width:600px) {
    .app_fullscreen .container{
@@ -70,20 +71,14 @@ animation: start 2s 1 linear;
     }
 }
 
-.app_fullscreen #cross{
-    display: block;
-    font-size: 20px;
+.app_fullscreen i{
+    font-size: 32px;
     cursor: pointer;
-    width: fit-content;
-    padding: 5px 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgb(52, 55, 56);
+    color: #222;
     transition: .5s;
 }
-.app_fullscreen #cross:hover{
-    color:#fff;
-    background-color: rgb(218, 99, 99);
+.app_fullscreen i:hover{
+    color: indianred;
 }
 .app_fullscreen #section{
     background: linear-gradient(to left,pink,rgb(131, 51, 88));
@@ -137,7 +132,15 @@ header{
     border-bottom: 10px solid rgba(79, 156, 187, 0.849);
 }
 header .title{
+    color: #333;
     animation: momo 2s 1 ease-in ;
+}
+@media (max-width:767px) {
+    header .title{
+        text-align: center;
+        font-size: 25px;
+
+    }
 }
 /* end header */
 /* star encoding */
@@ -165,7 +168,6 @@ header .title{
     height: 300px;
     margin:50px auto;
     border-radius: 20px;
-    border:0;
     background: linear-gradient(45deg,#4CA1AF,#C4E0E5);
     box-shadow:0 0 10px rgb(51, 49, 49);
     animation: radius 10s infinite linear;
@@ -192,7 +194,7 @@ header .title{
     left: 0;
     background-color: rgb(161 160 160 / 22%);
     z-index: -1;
-    transition: .7s;
+    transition: .5s;
 }
 #p:hover::before{
     width: 100%;
@@ -202,7 +204,7 @@ header .title{
     font-size: 22px;
     font-family:monospace ;
     display: block;
-    width:80%;
+    width: 85%;
     height: 300px;
     margin:50px auto;
     border-radius: 20px;
@@ -223,16 +225,12 @@ header .title{
 }
 @keyframes momo{
     0%{
-        transform: translateX(-100px);
-    }
-    60%{
-        transform: translateX(100px);
-        letter-spacing: 4px;
         color:rgb(248, 175, 175);
+        letter-spacing: 4px;
     }
-   
     100%{
-        transform: translateX(0);
+        color: #333;
+        letter-spacing: 0;
     }
 }
 @keyframes radius{
