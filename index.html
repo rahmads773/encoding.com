@@ -7,12 +7,14 @@
     <link rel="icon" href="preview.svg" type="image/icon type">
     <title>Encoding</title>
     <link rel="stylesheet" href="pr1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script defer src="pr3.js"></script>
 </head>
 <body>
     <div class="app_fullscreen" id="app">
         <div class="container">
-            <span id="cross">&#x2715</span>
+            <!-- <span id="cross">&#x2715</span> -->
+            <i class="bi bi-x-circle-fill" id="cross"></i>
             <section id="section">
                   <img src="preview.svg" width="70px" height="70px">
                   <div class="text">
@@ -27,15 +29,17 @@
     <header>
          <p class="title" id="title"> Encoding</p>
     </header>
-
+<div class="container">
     <select id="select">
         <option value="encode">Encode</option>
         <option value="decode">Decode</option>
     </select>
     <textarea  id="textarea"></textarea>
-     <p id="p"> Result </p>
-     <div id="result">
+    <p id="p"> Result </p>
+    <div id="result">
 
-     </div>
+    </div>
+</div>
+    
 </body>
 </html>
